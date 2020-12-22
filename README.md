@@ -1,6 +1,6 @@
-### Практика по Software distribution
+## Практика по Software distribution
 
-## Цель:
+### Цель:
 
 1) Создать свой RPM пакет (можно взять свое приложение, либо собрать, например, nginx с определенными опциями);
 2) Создать свой репозиторий и разместить там ранее собранный RPM.
@@ -64,7 +64,6 @@ Dec 14 16:25:12 localhost.localdomain systemd[1]: Started nginx - high performan
 Создадим каталог repo в директории nginx и скопируем туда наш собранный RPM и RPM для установки репозитория
 ```
 [root@localhost ~]# mkdir /usr/share/nginx/html/repo
-```
 [root@localhost ~]# cp rpmbuild/RPMS/x86_64/nginx-1.18.0-2.el8.ngx.x86_64.rpm /usr/share/nginx/html/repo/
 [root@localhost ~]# wget https://repo.percona.com/centos/7Server/RPMS/noarch/percona-release-1.0-9.noarch.rpm -O /usr/share/nginx/html/repo/percona-release-1.0-9.noarch.rpm
 ```
